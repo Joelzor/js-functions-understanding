@@ -171,14 +171,77 @@
 
 //Q15
 
-function myFunction(num1) {
-  if(true) {
-    return -10
-  }
+// function myFunction(num1) {
+//   if(true) {
+//     return -10
+//   }
 
-  return num1 * 10
-}
+//   return num1 * 10
+// }
 
-const result = myFunction(5)
-console.log(result)
+// const result = myFunction(5)
+// console.log(result)
 //the result should show -10. Because the second return statement will never be reached becuase the if condition will never fail in this exmaple. 
+
+// Q16
+// function myFunction(num1) {
+//   if(false) {
+//     return -100
+//   }
+
+//   return num1 * 10
+// }
+
+// const result = myFunction(5)
+// console.log(result)
+
+// The first return cannot be reached due to the if condition (false). Therefore we multiply num by 10 and store it in result.
+
+// Q17
+// function myFunction(num1) {
+//   return -100
+
+//   return num1 * 10
+// }
+
+// const result = myFunction(5)
+// console.log(result)
+
+// The second return is unreachable due to the previous return. Therefore -100 will be stored in result. 
+
+// Q18
+// function myFunction(num1) {
+
+//   return num1 * 10
+
+//   return -100
+// }
+
+// const result = myFunction(5)
+// console.log(result)
+
+// Again, the second return is unreachable because first return exits the function. Therefore, num1 * 10 is is stored in result, thus resulting in 50.
+
+// Q19
+// function myFunction(num1, num2, num3) {
+//   return num2
+// }
+
+// const result = myFunction(5, 10, 15)
+// console.log(result)
+
+// This function will return 10 because num2 is the only thing being returned. The other arguments are basically discarded until called
+
+// Q20
+// function myFunction(num1, num2, num3) {
+//   return num1 + num3
+// }
+
+// const num1 = 20
+// const num2 = 200
+// const num3 = 1000
+
+// const result = myFunction(5, 10, num3, 15)
+// console.log(result)
+
+// Only two of the three parameters are called in the function body. The first paramter is set to 5 and the third is defined as a variable (num3) equaling 1000. Therefore, the result will be 1005.
