@@ -245,3 +245,72 @@
 // console.log(result)
 
 // Only two of the three parameters are called in the function body. The first paramter is set to 5 and the third is defined as a variable (num3) equaling 1000. Therefore, the result will be 1005.
+
+//Q21
+
+// function myFunction(num1, num2) {
+//   const result = num1+num2
+//   return result
+// }
+
+// const result = myFunction(10, 20)
+// myFunction(100, 2)
+// console.log(result)
+//result will output 30. the second myFunction will not be shown as it is not called upon(until it is used it will just be there)
+
+//Q22
+// function myFunction(num1, num2) {
+//   let result = num1+num2
+//   return result
+// }
+
+// let result = 0
+// myFunction(100, 2)
+// console.log(result)
+//the result will return '0' as that is the value it is assigned. the second myFunction will not return anything unless it is called upon.
+
+//Q23
+// function myFunction(num1, num2) {
+//   result = num1+num2
+// }
+
+// let result = 0
+// myFunction(100, 2)
+// console.log(result)
+
+//regardless of the fact that there is no return. result will still show the value of '0' as that is what it is assigned to.
+
+//we were wrong. 
+
+//the function reassigns the variable on line 277. 
+//this time we dont declare a new variable or a new result variable in the function, therefore the answer will result in 102.
+
+//Q24
+// function myFunction(num1, num2) {
+//   const result = num1+num2
+//   return 100
+// }
+
+// const result = myFunction(5, 2)
+// console.log(result)
+// this function has a set return of 100, therefore that will be the only output when the function is called. 
+//
+//Q25
+
+function myFunction(a) {
+  let b = 20
+  
+  console.log("a:", a) //100
+  console.log("b:", b) // 20 
+  console.log("c:", c) //3
+}
+
+let a = 1
+let b = 2
+let c = 3
+
+myFunction(100) 
+//the function will log 3 values.
+// a will give 100 
+//b is being accessed from the function block, therefore = 20 
+//c is only given the value of 3. 
